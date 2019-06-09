@@ -48,7 +48,7 @@ public class GridManager : MonoBehaviour {
       }
     }
   }
-    //程序入口
+    //程序入口啊啊啊
   void Awake () {
     state = State.Loaded;
     scoreText = scoreObject.GetComponent<GUIText>();
