@@ -48,7 +48,8 @@ public class GridManager : MonoBehaviour {
       }
     }
   }
-    //程序入口啊啊啊欧欧
+
+  //程序入口
   void Awake () {
     state = State.Loaded;
     scoreText = scoreObject.GetComponent<GUIText>();
@@ -63,9 +64,9 @@ public class GridManager : MonoBehaviour {
                               gameOverButtonWorldPosition.y,
                               gameOverButtonWidth,
                               gameOverButtonHeight);
-  }
+   }
 	
-  void Update () {
+   void Update () {
     if (state == State.Loaded) {
       state = State.WaitingForInput;
       GenerateRandomTile();
